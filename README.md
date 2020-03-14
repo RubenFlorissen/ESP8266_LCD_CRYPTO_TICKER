@@ -12,3 +12,6 @@ First of all, you're going to need an ESP8266 board. They are available off of A
 
 ## Powered by CoinGecko API:
 This project couldn't have been finished without CoinGecko's API. [Check them out!](https://coingecko.com)
+
+## How do I change the cryptocurrency displayed?
+The cryptocurrency that's being tracked is hardcoded, you'll have to change it yourself if you don't want to use NANO (cryptocurrency). The program has been tested to support other cryptocurrencies, and it works just fine. Search the cryptocurrency you would like to use here: https://api.coingecko.com/api/v3/coins/list. Copy the id of the currency and replace that with nano in the code. Open an issue if you would like more help setting it up, I'll get back to you as soon as I can.
