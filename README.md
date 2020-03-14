@@ -1,5 +1,5 @@
 # ESP8266_LCD_CRYPTO_TICKER
-Make a crypto ticker with the ESP8266. Scroll down for an explanation, how to make one yourself!
+Make a crypto ticker with the ESP8266. Scroll down for an explanation, on how to make one yourself!
 
 ## Finished Product:
 ![Picture of the Ticker](ticker.jpg)
