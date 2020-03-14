@@ -8,7 +8,7 @@
 #include <ESP8266HTTPClient.h>
 #include <ArduinoJson.h>
 #include <LiquidCrystal_I2C.h>
-#include <time.h>
+
  
 // Devices
 const int lcdCols = 16; 
