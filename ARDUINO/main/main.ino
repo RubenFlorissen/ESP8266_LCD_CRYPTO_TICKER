@@ -104,7 +104,7 @@ void printData() {
   DynamicJsonDocument doc(capacity);
   deserializeJson(doc, json);
   float nano_eur = doc["nano"]["eur"]; // change nano to the cryptocurrency of your likings.
-  Serial.println(nano_eur, 10);
+  Serial.println(nano_eur, 10); // change this variable if you want to use a different crypto.
   
   // LCD
   lcd.setCursor(0, 0);
@@ -112,12 +112,12 @@ void printData() {
   lcd.setCursor(0, 1);
   lcd.print((char)0);
   lcd.setCursor(1, 1);
-  lcd.print(nano_eur, 3); // adjust the precision of the float, should be used for altcoins due to the lower price.
+  lcd.print(nano_eur, 3); // adjust the precision of the float, should be used for altcoins due to the lower price. Also, change the variable if you want to use a different crypto.
   lcd.setCursor(15, 1);
   lcd.blink();
 
   // Buzzer
-  if (nano_eur <= 0.33) { // can be removed completely. If the price of nano is below 33 cents, then play a sound.
+  if (nano_eur <= 0.33) { // can be removed completely. If the price of nano is below 33 cents, then play a sound. Also, change the variable if you want to use a different crypto.
     tone(buzzer, 1000);
   }
 }
